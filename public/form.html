@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login - Portail Etudiant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'none'; connect-src 'self' http://localhost:3000;"> -->
+</head>
+<body>
+
+    <div class="login-container">
+        <header>
+            <div class="logo-section">
+                <img src="progress.png" alt="PROGRES Logo" class="main-logo">
+            </div>
+        </header>
+
+        <div class="banner info-banner">
+            <span class="icon">ⓘ</span>
+            <p>nom d'utilisateur = année de bac + matricule du bac ex: 202531056999</p>
+        </div>
+
+        <div class="banner error-banner">
+            <span class="icon">ⓧ</span>
+            <p>les comptes d'accès sont activés selon la date du RDV (fiche d'affectation)</p>
+        </div>
+
+        <div class="login-card">
+            <div class="card-header">
+                <h1>ETU Progiciel de Gestion Intégré</h1>
+                <h3>Portail Etudiant</h3>
+            </div>
+
+            <form action="/submit" method="POST">
+                <div class="input-group">
+                    <input type="text" name="idMat" placeholder="année de bac+matricule du bac ex:202535014252" required>
+                    <div class="input-addon">👤</div>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Mot de passe (celui de relève de note)" required>
+                    <div class="input-addon">🔒</div>
+                </div>
+
+                <button type="submit" class="btn-submit">Se connecter</button>
+            </form>
+
+            <div class="card-footer">
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+        </div>
+
+        <footer>
+            <a href="https://www.mesrs.dz/">Copyright 2026 <strong>Ministère de l'Enseignement Supérieur et de la Recherche Scientifique</strong></a>
+        </footer>
+    </div>
+
+</body>
+</html>

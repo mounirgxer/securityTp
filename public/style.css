@@ -1,0 +1,165 @@
+body {
+    background-color: #cfcfcf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 580px;
+    text-align: center;
+}
+
+/* Header Styles */
+.main-logo {
+    max-width: 280px;
+    margin-bottom: 10px;
+}
+
+.ministry-info {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.flag {
+    width: 40px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.ministry-info h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    direction: rtl;
+}
+
+.ministry-info p {
+    margin: 5px 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+/* Banners */
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    text-align: left;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.info-banner {
+    background-color: #ade8ff;
+    color: #005a8d;
+}
+
+.error-banner {
+    background-color: #fbc7cc;
+    color: #a94442;
+}
+
+.icon {
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+/* Login Card */
+.login-card {
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    margin-top: 15px;
+}
+
+.card-header {
+    padding: 30px 20px 20px;
+}
+
+.card-header h1 {
+    color: #999;
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.card-header h3 {
+    color: #999;
+    font-weight: normal;
+    margin: 5px 0 0;
+}
+
+form {
+    padding: 0 40px 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.input-addon {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    border-left: 1px solid #ccc;
+    color: #555;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    float: left; /* Aligns button to the left like the image */
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    clear: both;
+    background-color: #d8d8d8;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.card-footer a {
+    color: #777;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.card-footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+footer a{
+    margin-top: 25px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #666;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
